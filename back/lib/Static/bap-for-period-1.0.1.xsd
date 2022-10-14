@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://kvs.pfr.com/bap-for-period/1.0.1" xmlns:benefits="http://kvs.pfr.com/benefits-common/1.0.0" xmlns:smev="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" targetNamespace="http://kvs.pfr.com/bap-for-period/1.0.1" elementFormDefault="qualified" attributeFormDefault="unqualified" jxb:version="2.0">
+	<import namespace="http://kvs.pfr.com/benefits-common/1.0.0" schemaLocation="commons/benefits-common-1.0.0.xsd"/>
+	<import namespace="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1" schemaLocation="commons/smev-supplementary-commons-1.0.1.xsd"/>
+	<element name="BapForPeriodRequest">
+		<complexType>
+			<group ref="benefits:RequestOnPeriodGroup"/>
+		</complexType>
+	</element>
+	<element name="BapForPeriodResponse">
+		<complexType>
+			<group ref="benefits:ResponseOnPeriodGroup" minOccurs="0"/>
+		</complexType>
+	</element>
+</schema>
